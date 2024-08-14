@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+ <color name="color0">#75aaeb</color>
+ <color name="color1">#2F85ED</color>
+ <color name="color2">#FFFFFF</color>
+ <color name="Text">#8f8f8f</color>
+ <color name="TextSound">#CD282828</color>
+ <color name="colorApp">#3976C2</color>
+ <color name="colorApp2">#0754B3</color>
+ <color name="ActionBarText">#FFFFFF</color>
+ <color name="DarkGreen">#009933</color>
+ <drawable name="semitransparent_white">#dfdfdf</drawable>
+
+</resources>

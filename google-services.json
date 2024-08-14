@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "946487416189",
+    "project_id": "cohra-f447a",
+    "storage_bucket": "cohra-f447a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:946487416189:android:d4626ef0a179f9a9136814",
+        "android_client_info": {
+          "package_name": "com.martinforget.cardiaccoherencelite"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "946487416189-0vqokang7981dig6tmf37fkcmndkkuhu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCk_1mqkgGluwNkooj40RSgFoj2CFwi8kA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "946487416189-0vqokang7981dig6tmf37fkcmndkkuhu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

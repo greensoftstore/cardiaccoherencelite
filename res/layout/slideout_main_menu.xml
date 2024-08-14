@@ -1,0 +1,702 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainContent2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/semi_circle_background"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_parameters">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/firs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="7dp"
+                    app:cardElevation="7dp"
+                    app:cardUseCompatPadding="true">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="10dp"
+
+                        >
+
+                        <!--First part done-->
+                        <TextView
+                            android:id="@+id/sessionTimeTxt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginLeft="32dp"
+                            android:layout_marginTop="20dp"
+                            android:text="@string/session"
+                            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                        <SeekBar
+                            android:id="@+id/timeBar"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/sessionTimeTxt"
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginEnd="5dp"
+                            android:layout_toStartOf="@+id/sessionNb"
+                            android:indeterminate="false"
+                            android:theme="@style/SCBSwitch" />
+
+                        <TextView
+                            android:id="@+id/sessionNb"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@+id/timeBar"
+                            android:layout_alignParentEnd="true"
+                            android:paddingLeft="20dp"
+                            android:paddingRight="20dp"
+                            android:text="995"
+                            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                        <TextView
+                            android:id="@+id/nbCycleTxt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/timeBar"
+                            android:layout_alignParentStart="true"
+                            android:layout_marginStart="32dp"
+                            android:layout_marginLeft="32dp"
+                            android:layout_marginTop="20dp"
+                            android:text="@string/cycles"
+                            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                        <SeekBar
+                            android:id="@+id/cycleBar"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/nbCycleTxt"
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginEnd="5dp"
+                            android:layout_toStartOf="@+id/cycleNb"
+                            android:indeterminate="false"
+                            android:theme="@style/SCBSwitch" />
+
+                        <TextView
+                            android:id="@+id/cycleNb"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@+id/cycleBar"
+                            android:layout_alignParentEnd="true"
+                            android:paddingRight="20dp"
+                            android:text="995"
+                            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                        <TextView
+                            android:id="@+id/ratioTxt2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/cycleBar"
+                            android:layout_alignParentStart="true"
+                            android:layout_marginStart="32dp"
+                            android:layout_marginLeft="32dp"
+                            android:layout_marginTop="10dp"
+                            android:gravity="center"
+                            android:text="@string/ratio"
+                            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                        <SeekBar
+                            android:id="@+id/ratiobar"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/ratioTxt2"
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_toStartOf="@+id/ratioNb"
+                            android:indeterminate="false"
+                            android:theme="@style/SCBSwitch" />
+
+                        <TextView
+                            android:id="@+id/ratioNb"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@+id/ratiobar"
+                            android:layout_alignParentEnd="true"
+                            android:paddingRight="20dp"
+
+                            android:text="888/888"
+                            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/seconds"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/firs"
+                    app:cardCornerRadius="7dp"
+                    app:cardElevation="7dp"
+                    app:cardUseCompatPadding="true">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="10dp">
+
+                        <TextView
+                            android:id="@+id/expertlabel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="32dp"
+                            android:layout_marginTop="10dp"
+                            android:text="@string/expert"
+                            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                        <ImageView
+                            android:id="@+id/imageView4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_above="@+id/inspTimeTxt"
+                            android:layout_marginStart="8dp"
+                            app:srcCompat="@drawable/star" />
+
+                        <Switch
+                            android:id="@+id/expertSwitch"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@+id/expertlabel"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginRight="15dp"
+                            android:checked="false"
+                            android:theme="@style/SCBSwitch"
+                            android:thumb="@drawable/thumb_custom"
+                            android:track="@drawable/track_custom" />
+
+                        <TextView
+                            android:id="@+id/inspTimeTxt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/expertlabel"
+                            android:layout_marginLeft="32dp"
+                            android:layout_marginTop="10dp"
+                            android:text="@string/insp"
+                            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                        <SeekBar
+                            android:id="@+id/inspbar"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/inspTimeTxt"
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_toStartOf="@+id/expertSwitch"
+                            android:indeterminate="false"
+                            android:theme="@style/SCBSwitch" />
+
+
+                        <TextView
+                            android:id="@+id/inspNb"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@+id/inspbar"
+                            android:layout_alignParentEnd="true"
+                            android:paddingRight="20dp"
+                            android:text="995"
+                            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                        <TextView
+                            android:id="@+id/expTimeTxt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/inspbar"
+                            android:layout_marginLeft="32dp"
+                            android:layout_marginTop="10dp"
+                            android:text="@string/exp"
+                            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                        <SeekBar
+                            android:id="@+id/expbar"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/expTimeTxt"
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_toStartOf="@+id/expertSwitch"
+                            android:indeterminate="false"
+                            android:theme="@style/SCBSwitch" />
+
+                        <TextView
+                            android:id="@+id/expNb"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@+id/expbar"
+                            android:layout_alignParentEnd="true"
+                            android:paddingRight="20dp"
+                            android:text="995"
+                            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                        <TextView
+                            android:id="@+id/holdTimeTxt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/expbar"
+                            android:layout_marginLeft="32dp"
+                            android:layout_marginTop="10dp"
+                            android:text="@string/hold"
+                            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                        <SeekBar
+                            android:id="@+id/holdbar"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/holdTimeTxt"
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_toStartOf="@+id/expertSwitch"
+                            android:indeterminate="false"
+                            android:theme="@style/SCBSwitch" />
+
+                        <TextView
+                            android:id="@+id/holdNb"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@+id/holdbar"
+                            android:layout_alignParentEnd="true"
+                            android:paddingRight="20dp"
+                            android:text="995"
+                            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                        <TextView
+                            android:id="@+id/holdOutTimeTxt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/holdbar"
+                            android:layout_marginLeft="32dp"
+                            android:layout_marginTop="10dp"
+                            android:text="@string/holdout"
+                            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                        <SeekBar
+                            android:id="@+id/holdOutbar"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/holdOutTimeTxt"
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_toStartOf="@+id/expertSwitch"
+                            android:indeterminate="false"
+                            android:theme="@style/SCBSwitch" />
+
+                        <TextView
+                            android:id="@+id/holdOutNb"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@+id/holdOutbar"
+                            android:layout_alignParentEnd="true"
+                            android:paddingRight="20dp"
+                            android:text="995"
+                            android:textAppearance="?android:attr/textAppearanceMedium" />
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/third"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/seconds"
+                    app:cardCornerRadius="7dp"
+                    app:cardElevation="7dp"
+                    app:cardUseCompatPadding="true">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="10dp">
+
+
+                        <TextView
+                            android:id="@+id/notifTxt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:layout_marginLeft="32dp"
+                            android:layout_marginTop="10dp"
+                            android:text="@string/notifications"
+                            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                        <Switch
+                            android:id="@+id/notifSwitch"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@+id/notifTxt"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginRight="15dp"
+                            android:checked="false"
+                            android:theme="@style/SCBSwitch"
+                            android:thumb="@drawable/thumb_custom"
+                            android:track="@drawable/track_custom" />
+
+                        <TextView
+                            android:id="@+id/notifTimeTxt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/notifTxt"
+                            android:layout_marginLeft="32dp"
+                            android:layout_marginTop="10dp"
+                            android:text="@string/notif_time"
+                            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                        <SeekBar
+                            android:id="@+id/notifbar"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/notifTimeTxt"
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginEnd="5dp"
+                            android:layout_toStartOf="@+id/notifNb"
+                            android:indeterminate="false"
+                            android:theme="@style/SCBSwitch" />
+
+                        <TextView
+                            android:id="@+id/notifNb"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@+id/notifbar"
+                            android:layout_alignParentEnd="true"
+                            android:paddingRight="20dp"
+                            android:text="995"
+                            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                        <!--                    <View-->
+                        <!--                        android:id="@+id/thirdBar"-->
+                        <!--                        android:layout_width="match_parent"-->
+                        <!--                        android:layout_height="1dp"-->
+                        <!--                        android:layout_below="@+id/notifbar"-->
+                        <!--                        android:layout_marginTop="20dp"-->
+                        <!--                        android:background="@color/color0" />-->
+
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/fourth"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/third"
+                    app:cardCornerRadius="7dp"
+                    app:cardElevation="7dp"
+                    app:cardUseCompatPadding="true">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="10dp">
+
+                        <TextView
+                            android:id="@+id/heartTxt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="32dp"
+                            android:layout_marginTop="10dp"
+                            android:text="@string/heartText"
+                            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                        <Switch
+                            android:id="@+id/heartSwitch"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@+id/heartTxt"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginRight="15dp"
+                            android:checked="false"
+                            android:theme="@style/SCBSwitch"
+                            android:thumb="@drawable/thumb_custom"
+                            android:track="@drawable/track_custom" />
+
+                        <TextView
+                            android:id="@+id/heartTxt2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="32dp"
+                            android:layout_marginTop="42dp"
+                            android:text="@string/heartText2"
+                            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                        <Switch
+                            android:id="@+id/heartSwitch2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@+id/heartTxt2"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginRight="15dp"
+                            android:checked="false"
+                            android:theme="@style/SCBSwitch"
+                            android:thumb="@drawable/thumb_custom"
+                            android:track="@drawable/track_custom" />
+
+
+                    </RelativeLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+
+                <!--            <View-->
+                <!--                android:id="@+id/firstBar"-->
+                <!--                android:layout_width="match_parent"-->
+                <!--                android:layout_height="1dp"-->
+                <!--                android:layout_below="@+id/ratiobar"-->
+                <!--                android:layout_marginTop="20dp"-->
+                <!--                android:background="@color/color0" />-->
+                <!--            &lt;!&ndash;First part done&ndash;&gt;-->
+                <!--            -->
+                <!--          -->
+
+                <!--            <View-->
+                <!--                android:id="@+id/secondBar"-->
+                <!--                android:layout_width="match_parent"-->
+                <!--                android:layout_height="1dp"-->
+                <!--                android:layout_below="@+id/expbar"-->
+                <!--                android:layout_marginTop="20dp"-->
+                <!--                android:background="@color/color0" />-->
+                <!--            -->
+                <!--            &lt;!&ndash;Second done&ndash;&gt;-->
+
+
+            </RelativeLayout>
+        </ScrollView>
+
+
+    </RelativeLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/toolbar_parameters"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:background="@color/colorApp2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <ImageView
+            android:id="@+id/imgMenu2"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="4dp"
+            android:src="@drawable/ic_circleplus"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="279dp"
+            android:layout_height="48dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="Parameters"
+                android:textColor="@color/color2"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/btnBack"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/btnBack"
+                android:layout_width="24dp"
+                android:layout_height="26dp"
+                android:layout_marginStart="16dp"
+                android:src="@drawable/arrow_back"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/background2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#66000000"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/view2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:visibility="invisible"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.42" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.37" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/background_menu_right"
+            android:clickable="true"
+            app:layout_constraintBottom_toTopOf="@+id/guideline2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/guideline3"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/btnCloseLeft"
+                android:layout_width="@dimen/_12sdp"
+                android:layout_height="@dimen/_12sdp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:src="@drawable/ic_close_menu"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:tint="@color/color2" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:layout_marginEnd="@dimen/_8sdp"
+                android:layout_marginBottom="@dimen/_32sdp"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnCloseLeft">
+
+                <LinearLayout
+                    android:id="@+id/llSoundConfig"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:src="@drawable/ic_setting"
+                        app:tint="@color/color2" />
+
+                    <TextView
+                        android:layout_width="@dimen/_80sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_7sdp"
+                        android:gravity="center"
+                        android:text="@string/soundtitle"
+                        android:textColor="@color/color2"
+                        android:textSize="@dimen/_12ssp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llMusicConfig"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:src="@drawable/ic_setting"
+                        app:tint="@color/color2" />
+
+                    <TextView
+                        android:layout_width="@dimen/_80sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_7sdp"
+                        android:gravity="center"
+                        android:text="@string/musictitle"
+                        android:textColor="@color/color2"
+                        android:textSize="@dimen/_12ssp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llResetParam"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:src="@drawable/ic_reset"
+                        app:tint="@color/color2" />
+
+                    <TextView
+                        android:layout_width="@dimen/_80sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_7sdp"
+                        android:gravity="center"
+                        android:text="@string/refresh"
+                        android:textColor="@color/color2"
+                        android:textSize="@dimen/_12ssp" />
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

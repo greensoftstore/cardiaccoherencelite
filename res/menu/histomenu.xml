@@ -1,0 +1,9 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+        <item
+            android:id="@+id/ClearHistory"
+            android:title="@string/clearsessionhistory"/>
+        <item
+            android:id="@+id/ShareHistory"
+            android:title="@string/sharehistory"/>
+
+</menu>

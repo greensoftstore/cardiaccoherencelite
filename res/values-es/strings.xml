@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Cohera - Coherencia cardíaco</string>
+    <string name="action_settings">Configuraciones</string>
+    <string name="application_custom_name">Cohera - Coherencia cardíaco</string>
+    <string name="author">Autor: Martin Forget \nCopyright 2023</string>
+    <string name="thanks">Gracias a jfeinstein10 por su biblioteca SlidingMenu (https://github.com/jfeinstein10/SlidingMenu) y a Philipp Jahoda por su biblioteca MPAndroidChart</string>
+    <string name="help">¿Para qué es esta aplicación?\n\nEsta aplicación te permite ayudar a controlar tu respiración haciéndola primero más regular. Luego, reduciendo la cantidad de respiraciones por minuto.\n\nSimplemente inhale cuando la gota de agua suba y exhale cuando baje.\n\nEl menú de opciones le permite especificar la duración del ejercicio y la cantidad de respiraciones por minuto.\n\nDetermina tu frecuencia respiratoria \nPuedes determinar tu frecuencia respiratoria actual moviendo la gota de agua hacia arriba y hacia abajo. El cronómetro se iniciará y el número de ciclos aumentará cada vez que complete un ciclo hacia arriba y hacia abajo. \n\nMonitor cardíaco: coloque el dedo en la cámara que se encuentra en la parte posterior de su dispositivo y, después de unos segundos, se mostrará su frecuencia cardíaca.\n\nSegún las investigaciones de neurocardiología, la coherencia cardíaca es el nombre que se le ha dado a un reflejo descubierto por investigadores estadounidenses hace quince años\n\nSe ha demostrado que el corazón y el cerebro laten al unísono: si nuestra mente y nuestras emociones afectan la frecuencia cardíaca, la frecuencia cardíaca también influye en nuestro cerebro.\n\nAl controlar el corazón ritmo, también puede controlar sus emociones, lo que reduce su nivel de estrés.\n\nLa mejor manera de controlar su ritmo cardíaco es controlar su respiración. La respiración lenta y controlada reduce directamente la frecuencia cardíaca.</string>
+    <string name="start">Comenzar</string>
+    <string name="stop">Parar</string>
+    <string name="cycleslabel">Ciclo</string>
+    <string name="helplabel">Ayuda</string>
+    <string name="tutoriallabel">Tutorial</string>
+    <string name="aboutlabel">A proposito</string>
+    <string name="shareapp">Compartir</string>
+    <string name="options">Opciones</string>
+    <string name="ratio">Relación ins/exp (%)</string>
+    <string name="session">Duración de la sesión (m)</string>
+    <string name="cycles">Ciclos por minuto</string>
+    <string name="expert">Modo experto</string>
+    <string name="insp">Tiempo de inspiración (s)</string>
+    <string name="exp">Tiempo de caducidad (s)</string>
+    <string name="hold">Tiempo de espera ins (s)</string>
+    <string name="holdout">Tiempo de espera exp (s)</string>
+    <string name="normalmodemsg">Modo normal seleccionado</string>
+    <string name="apply">Aplicar</string>
+    <string name="refresh">Reiniciar parámetro</string>
+    <string name="close">Cerca</string>
+    <string name="whatis">¿Qué es la coherencia cardíaca?</string>
+    <string name="sharetext">¡Aquí hay una gran aplicación para controlar el estrés! https://play.google.com/store/apps/details?id=com.martinforget.cardiaccoherencelite</string>
+    <string name="shareusing">Comparte esta aplicación con:</string>
+    <string name="powersavemode">¡Atención! Esta aplicación no funciona correctamente en el modo de ahorro de energía. Cargue su dispositivo.</string>
+    <string name="noanimation">¡Atención! Algunas configuraciones de animaciones parecen estar deshabilitadas en su dispositivo, el comportamiento de la aplicación puede verse afectado. Verifique el parámetro de escala de duración del animador en el menú de opciones del desarrollador (debe ser igual a 1)</string>
+    <string name="camerapermission">Se requiere acceso a la cámara</string>
+
+    <string name="history">Histórico</string>
+    <string name="starttime_history">hora de inicio</string>
+    <string name="cycles_history">Número de ciclos</string>
+    <string name="ratio_history">Relación</string>
+    <string name="duration_history">Duración</string>
+    <string name="heart_start_history">Ritmo de inicio</string>
+    <string name="heart_stop_history">Buen ritmo</string>
+    <string name="share">Compartir</string>
+    <string name="sharehistory">Compartir historial</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Anular</string>
+    <string name="table_history">\u0020 \u0020 \u0020 \u0020 \u0020 \u0020\u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020  \u0020 \u0020 \u0020 Historia \n
+        Hora de inicio \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020
+Número de ciclos \u0020 \u0020 \u0020 \u0020 \u0020
+Relación \u0020 \u0020 \u0020 \u0020 \u0020
+Duración \u0020 \u0020 \u0020 \u0020 \u0020
+Comienzo del corazón \u0020 \u0020 \u0020 \u0020 \u0020
+buen corazón</string>
+    <string name="choose_history">Escoge una opción:</string>
+    <string name="clearsessionhistory">Borrar historial</string>
+    <string name="all_session_history">Historia completa</string>
+    <string name="last_session">Última sesión</string>
+    <string-array name="spinner_history">
+        <item>Historia completa</item>
+        <item>Última sesión</item>
+    </string-array>
+
+    <string name="session_history_database_create">"
+
+  CREATE TABLE session_history (id INTEGER PRIMARY KEY AUTOINCREMENT,start_time date,end_time date,number_cycles int,ratio int, duration int, heart_begin int, heart_end int);</string>
+    <string name="notification_text">¡Es hora de la coherencia del corazón!</string>
+    <string name="parameters">Configuraciones</string>
+    <string name="notifications">Notificaciones</string>
+    <string name="notif_time">Tiempo entre notificaciones (h)</string>
+    <string name="soundtitle">Configuración sonidos</string>
+    <string name="soundtitle2">Selecciona un sonido</string>
+    <string name="musictitle">Configuración Música</string>
+    <string name="musictitle2">Seleccionar música</string>
+    <string name="sound_breate_in">Sonido de inspiración</string>
+    <string name="sound_breate_out">Sonido al exhalar</string>
+    <string name="volume">Ajusta el volúmen</string>
+    <string name="sound1">Bip</string>
+    <string name="sound2">Bip 2</string>
+    <string name="sound3">Gong</string>
+    <string name="sound4">Gong 2</string>
+    <string name="sound5">Anillo</string>
+    <string name="sound6">Anillo 2</string>
+
+    <string name="music_selection">Seleccionar música</string>
+    <string name="music1">Ninguna</string>
+    <string name="music2">ondas alfa</string>
+    <string name="music3">ondas beta</string>
+    <string name="music4">ondas delta</string>
+    <string name="music5">ondas theta</string>
+    <string name="heartText">Monitor de corazón</string>
+    <string name="heartText2">Luces encendidas</string>
+    <string name="heartTextNoFlash">(Deshabilitado, luz no disponible)</string>
+
+    <string name="intro">Cómo usar esta aplicación</string>
+    <string name="intro11">Para hacer un ejercicio de coherencia cardíaca, presiona el botón de inicio e inhala cuando la gota sube y exhala cuando baja.</string>
+    <string name="intro12">Si desea determinar su número de ciclos respiratorios para un tiempo determinado, presione la gota y haga que suba durante la inspiración y baje durante la espiración.</string>
+    <string name="intro13">Un historial le permite ver todos los ejercicios que ha realizado.</string>
+    <string name="intro21">Como opción, el modo experto te permite especificar el tiempo de inspiración, espiración y un tiempo de espera a décimas de segundo. Perfecto para aquellos que quieren un ejercicio específico.</string>
+    <string name="intro22">También opcional, el monitor cardíaco le permite leer su frecuencia cardíaca. Para usarlo, coloque su dedo en la cámara de su dispositivo.</string>
+    <string name="intro23">Cuando se detecta pulso el corazón se pone rojo, cuando el pulso es estable el corazón se pone verde y aparece el ritmo. Al final del ejercicio, se muestra el ritmo inicial y final.</string>
+    <string name="intro31">Por último, está disponible una notificación como opción para recordarte que es hora de hacer un ejercicio.</string>
+    <string name="intro32"/>
+    <string name="intro33"/>
+
+    <string name="skip">Anular</string>
+    <string name="next">Próximo</string>
+    <string name="finish">Para terminar</string>
+
+    <string name="purchase_error1">error de compra 1</string>
+    <string name="purchase_error2">error de compra 2</string>
+    <string name="purchase_error3">error de compra 3</string>
+    <string name="purchase_error4">error de compra 4</string>
+    <string name="purchase_error5">error de compra 5</string>
+    <string name="purchase_error6">error de compra 6</string>
+    <string name="purchase_error7">error de compra 7</string>
+    <string name="purchase_already">¡Opción ya comprada!</string>
+    <string name="purchase_thankyou">Gracias por su compra!</string>
+    <string name="premiumSubscribeButton">Subscribe to versión premium</string>
+    <string name="premiumPurchaseButton">Comprar la versión premium</string>
+    <string name="premiumPurchaseText">Desbloquea todas las funciones</string>
+    <string name="notificationPurchaseButton">Desbloquear notificaciones</string>
+    <string name="notificationPurchaseText">Le permite programar un recordatorio para un ejercicio</string>
+    <string name="monitorPurchaseButton">Desbloquear monitor cardíaco</string>
+    <string name="monitorPurchaseText">Activa el pulsómetro para determinar tu frecuencia cardíaca</string>
+    <string name="ExpertPurchaseButton">Desbloquear el modo experto</string>
+    <string name="ExpertPurchaseText">Le permite configurar con precisión el tiempo de inspiración y espiración</string>
+    <string name="purchaseTitle">Esta función es opcional. Cómprelo para que esté disponible</string>
+    <string name="ProfilePurchaseButton">Desbloquear perfiles de usuario</string>
+    <string name="ProfilePurchaseText">Habilitar múltiples perfiles de usuario</string>
+    <string name="optionNotAvailable">Opción no disponible</string>
+
+
+    <string name="profile">Sal. Perfil</string>
+    <string name="profilelabel">Perfiles</string>
+    <string name="profiletitle">Seleccione un perfil</string>
+    <string name="profilename">Ingrese el nombre del perfil</string>
+    <string name="profile1">Perfil 1</string>
+    <string name="profile2">Perfil 2</string>
+    <string name="profile3">Perfil 3</string>
+    <string name="profile4">Perfil 4</string>
+    <string name="profile5">Perfil 5</string>
+    <string name="profileinfo">Nota: toque el texto del perfil para cambiar el nombre</string>
+
+    <string name="graphLabel">Ritmo cardiaco</string>
+    <string name="noData">Datos no disponibles</string>
+    <string name="energyMode">Modo de ahorro de energía detectado. Las animaciones se ven afectadas.</string>
+    <string name="debug">Modo de depuración</string>
+    <string name="monedatatitle">Se requiere aprobación explícita</string>
+    <string name="monedatatext"><p>\n\nEsta aplicación utiliza complementos de terceros que recopilan diversos datos, incluidos ID de dispositivos, ubicación, cobertura y rendimiento de la red móvil, lista de aplicaciones instaladas y estadísticas de uso. \n\nCon el consentimiento del usuario, estos datos se recopilarán y compartirán con estos terceros para fines de análisis y medición. El usuario puede cambiar de opinión en cualquier momento modificando el consentimiento en Configuración/Acerca de.\n\nPara obtener más información sobre los datos recopilados y ver la lista de socios, visite <a href="https://monedata.io/partners\">Socios de Monedata</a>.\n\n</p ></string >
+    <string name="yes">Si</string>
+    <string name="no">No</string>
+    <string name="consent">Modificar consentimiento</string>
+
+</resources>

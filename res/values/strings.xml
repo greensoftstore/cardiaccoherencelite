@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Cohera - Cardiac Coherence</string>
+    <string name="action_settings">Settings</string>
+    <string name="application_custom_name">Cohera - Cardiac Coherence</string>
+    <string name="version_number" translatable="false">Version: 2.8.4</string>
+    <string name="appid" translatable="false">2</string>
+    <string name="author">Author: Martin Forget \nCopyright 2023</string>
+    <string name="thanks">Thanks to jfeinstein10 for his \n SlidingMenu library (https://github\n.com/jfeinstein10/SlidingMenu) and to \nPhilipp Jahoda for his MPAndroidChart \nlibrary </string>
+    <string name="help">What is this app for?\n\nThis application helps lower your stress level by controlling your respiration by, at first, making it more regular, then, by reducing the number of breathing per minutes.\n\nJust breathe in when the water drop is going up and breathe out when it goes down.\n\nThe options menu allows you to specify the duration of the exercise and the number of respiration per minute.\n\nDetermining your current breathing rate\nYou can determine your current rate by moving the water drop up and down. The chronometer will start and the number of cycles will increase each time you bring the water drop up and down.\n\nHeart monitor: Place a finger on your device\'s back camera and after a few seconds your heart rate will be displayed.\n\nFollowing medical research neurocardiology, cardiac coherence is the name that was given to a reflex phenomenon discovered by U.S. researchers fifteen years ago.\n\nIt has been proven that Heart and Brain beat in unison: If our mind and emotions affect the heart rate, heart rate also has an influence on our brain.\n\nBy controlling you heart rate, you can also control your emotions, limiting your overall stress condition.\n\nThe easiest way to control your heart beat is by controlling your respiration. A slower, controlled respiration directly reduces and control the heart beat.\n\</string>
+    <string name="start">Start</string>
+    <string name="cycleslabel">Cycles</string>
+    <string name="stop">Stop</string>
+    <string name="helplabel">Help</string>
+    <string name="tutoriallabel">Tutorial</string>
+    <string name="aboutlabel">About</string>
+    <string name="shareapp">Share App</string>
+    <string name="options">Options</string>
+    <string name="ratio">Ratio In/Out (%)</string>
+    <string name="session">Session Time (min)</string>
+    <string name="cycles">Cycles Per Minutes</string>
+   	<string name="expert">Expert Mode</string>  
+   	<string name="insp">Breathe in time (sec)</string>
+   	<string name="exp">Breathe out time (sec)</string>
+    <string name="hold">Hold Breathe in time (sec)</string>
+    <string name="holdout">Hold Breathe out time (sec)</string>
+   	<string name="normalmodemsg">Normal Mode Selected</string>
+   	<string name="apply">Apply</string>
+   	<string name="refresh">Reset param</string>
+    <string name="close">Close</string>
+    <string name="whatis">What is Cardiac Coherence?</string>
+    <string name="sharetext">Check this nice app that I found for controlling my stress! https://play.google.com/store/apps/details?id=com.martinforget.cardiaccoherencelite </string>
+    <string name="shareusing">Share this app using: </string>
+    <string name="powersavemode">Warning! This application wont\'t run properly when the device is in power saving mode. Please charge your device.</string>    
+    <string name="noanimation">Warning! The animations are not enabled on your device, the application may not run properly. Verify the animator duration scale under the developer options (must equal 1)</string>
+    <string name="camerapermission">Camera access required</string>
+
+    <string name="history">History</string>
+    <string name="starttime_history">Start Time</string>
+    <string name="cycles_history">Nbr Cycles</string>
+    <string name="ratio_history">Ratio</string>
+    <string name="duration_history">Duration</string>
+    <string name="heart_start_history">Heart Start</string>
+    <string name="heart_stop_history">Heart Stop</string>
+    <string name="share">Share</string>
+    <string name="sharehistory">Share History</string>
+    <string name="ok">Ok</string>
+    <string name="cancel">Cancel</string>
+    <string name="table_history">\u0020 \u0020 \u0020 \u0020 \u0020 \u0020\u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020  \u0020 \u0020 \u0020  History \n   
+        Start Time  \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020
+			 Nbr Cycles \u0020 \u0020 \u0020 \u0020 \u0020
+			 Ratio    \u0020 \u0020 \u0020 \u0020 \u0020     
+			 Duration    \u0020 \u0020 \u0020 \u0020 \u0020
+			 Heart Begin    \u0020 \u0020 \u0020 \u0020 \u0020
+			 Heart End</string>
+    <string name="choose_history">Select an option:</string>
+	<string name="clearsessionhistory">Clear History</string>
+  	<string name="all_session_history">All session history</string> 
+  	<string name="last_session">Last session</string> 
+    <string-array name="spinner_history">
+        <item>Complete History</item>
+        <item>Last Session</item>
+    </string-array>
+
+    <string name="session_history_database_create">
+  
+  CREATE TABLE session_history (id INTEGER PRIMARY KEY AUTOINCREMENT,start_time date,end_time date,number_cycles int,ratio int, duration int, heart_begin int, heart_end int);  </string>  <string name="notification_text">It is time for cardiac coherence!</string>
+    <string name="parameters">Parameters</string>
+    <string name="notifications">Notifications</string>
+    <string name="notif_time">Time between notifications (hrs)</string>
+    <string name="soundtitle">Sound Config</string>
+    <string name="soundtitle2">Select Sound</string>
+    <string name="musictitle">Music Config</string>
+    <string name="musictitle2">Select Music</string>
+    <string name="sound_breate_in">Breathe In Sound</string>
+    <string name="sound_breate_out">Breathe Out Sound</string>
+    <string name="volume">Set Volume</string>
+    <string name="sound1">Beep</string>
+    <string name="sound2">Beep 2</string>
+    <string name="sound3">Gong</string>
+    <string name="sound4">Gong 2</string>
+    <string name="sound5">Dring</string>
+    <string name="sound6">Dring 2</string>
+    <string name="music_selection">Select Music</string>
+    <string name="music1">None</string>
+    <string name="music2">Alpha waves</string>
+    <string name="music3">Beta waves</string>
+    <string name="music4">Delta waves</string>
+    <string name="music5">Theta waves</string>
+
+    <string name="heartText">Heart Monitor</string>
+    <string name="heartText2">Flash Light Enable</string>
+    <string name="heartTextNoFlash">(Disabled, no flash light present)</string>
+
+    <string name="intro">How to Use\nThis Application</string>
+
+
+    <string name="intro11">To do a cardiac coherence exercise, you press the start button and inhale when the drop rises and exhale when the drop goes down.</string>
+    <string name="intro12">If you want to determine the number of breathing cycles you are doing for a given time, press the drop and make it rise when you inhale and go back down when exhaling.</string>
+    <string name="intro13">A history allows you to view all the exercises you have done.</string>
+    <string name="intro21">Optionally, expert mode allows you to specify the inspiratory, expiratory and holding time to the tenth of a second. Perfect for those who want a specific exercise.</string>
+    <string name="intro22">Also optional, the heart rate monitor allows you to read your heart rate. To use it, place your finger on the camera of your device.</string>
+    <string name="intro23">When a pulse is detected, the heart will turn red, when the pulse is stable, the heart will turn green and the heart rate will appear. At the end of the exercise, the start and end rates are displayed.</string>
+    <string name="intro31">Finally, an optional notification is available to remind you that it is time to do an exercise.</string>
+    <string name="intro32"></string>
+    <string name="intro33"></string>
+
+    <string name="skip">Skip</string>
+    <string name="next">Next</string>
+    <string name="finish">Finish</string>
+
+    <string name="purchase_error1">Purchasing Error 1</string>
+    <string name="purchase_error2">Purchasing Error 2</string>
+    <string name="purchase_error3">Purchasing Error 3</string>
+    <string name="purchase_error4">Purchasing Error 4</string>
+    <string name="purchase_error5">Purchasing Error 5</string>
+    <string name="purchase_error6">Purchasing Error 6</string>
+    <string name="purchase_error7">Purchasing Error 7</string>
+    <string name="purchase_already">Option already purchased!</string>
+    <string name="purchase_thankyou">Thank you for your purchase!</string>
+    <string name="premiumSubscribeButton">Subscribe to Premium Version</string>
+    <string name="premiumPurchaseButton">Purchase Premium Version</string>
+    <string name="premiumPurchaseText">Unlocks all features</string>
+    <string name="notificationPurchaseButton">Unlock Notification Function</string>
+    <string name="notificationPurchaseText">Program a reminder to perform an exercise</string>
+    <string name="monitorPurchaseButton">Unlock Cardiac Monitor Function</string>
+    <string name="monitorPurchaseText">Enables the cardiac monitor to determine your hear rate</string>
+    <string name="ExpertPurchaseButton">Unlock Expert Mode</string>
+    <string name="ExpertPurchaseText">Allows you to precisely configure breathe in and out time </string>
+    <string name="purchaseTitle">This is an optional feature. Proceed with purchase to unlock it</string>
+    <string name="ProfilePurchaseButton">Unlock User Profiles</string>
+    <string name="ProfilePurchaseText">Enables mulitple user profiles</string>
+    <string name="optionNotAvailable">Option not available</string>
+
+
+    <string name="profile">Profile Sel.</string>
+    <string name="profilelabel">Profiles</string>
+    <string name="profiletitle">Select Profile</string>
+    <string name="profilename">Set profile name</string>
+    <string name="profile1">Profile 1</string>
+    <string name="profile2">Profile 2</string>
+    <string name="profile3">Profile 3</string>
+    <string name="profile4">Profile 4</string>
+    <string name="profile5">Profile 5</string>
+    <string name="profileinfo">Note: Click on profile text to rename</string>
+
+    <string name="graphLabel">Heart Beat Rate</string>
+    <string name="noData">No Data Available</string>
+    <string name="energyMode">Energy saving mode detected, animation behaviour will be affected</string>
+    <string name="debug">Debug Mode</string>
+    <string name="monedatatitle">Explicit Approval Required</string>
+    <string name="monedatatext"><p>\n\nThis app uses third-party addons that collect varied data, which may include device identifiers, location, mobile network coverage and performance, installed apps list and usage stats.\n\nWith the username\'s consent, this data will be collected and shared with those third-parties for analysis and measurement purposes. The user can change his mind at any time by changing the consent in the Parameters/about section.\n\nTo learn more about the data collected and see the list of partners, please visit <a href="https://monedata.io/partners\">Monedata’s Partners</a> section.\n\n</p></string>
+    <string name="yes">Yes</string>
+    <string name="no">Non</string>
+    <string name="consent">Change Consent</string>
+</resources>

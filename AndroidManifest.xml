@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.martinforget.cardiaccoherencelite"
+    android:versionCode="58"
+    android:versionName="2.8.4" >
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="com.android.vending.BILLING" />
+    <uses-feature android:name="android.hardware.camera"/>
+    <uses-feature android:name="android.hardware.camera.flash"/>
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        <activity
+            android:exported="true"
+            android:name="com.martinforget.cardiaccoherencelite.MainActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.martinforget.cardiaccoherencelite.SessionHistoryActivity" >
+        </activity>
+        <activity android:name="com.martinforget.cardiaccoherencelite.SoundActivity" >
+        </activity>
+        <activity android:name="com.martinforget.cardiaccoherencelite.MusicActivity" >
+        </activity>
+        <activity android:name="com.martinforget.cardiaccoherencelite.PurchaseActivity" >
+        </activity>
+        <receiver android:name="com.martinforget.cardiaccoherencelite.NotificationPublisher" />
+
+        <!-- ATTENTION: This was auto-generated to add Google Play services to your project for
+     App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information. -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+    </application>
+
+</manifest>

@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainContent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_cardiaccoherence"
+        app:layout_constraintVertical_bias="1.0">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+
+            android:layout_height="0dp"
+            android:background="#fff"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar_cardiaccoherence">
+
+
+            <Button
+                android:id="@+id/actPremiumSubscribeButton"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView1"
+                android:layout_centerHorizontal="false"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:background="@drawable/mforget_corder_blueapp_style"
+                android:fontFamily="@font/poppins_regular"
+                android:onClick="onClick"
+                android:paddingStart="32dp"
+                android:paddingEnd="32dp"
+                android:text="@string/premiumSubscribeButton"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                app:layout_constraintStart_toStartOf="@+id/textView1"
+                app:layout_constraintTop_toBottomOf="@+id/textView1" />
+            <Button
+                android:id="@+id/actPremiumPurchaseButton"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/actPremiumSubscribeButton"
+                android:layout_centerHorizontal="false"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:background="@drawable/mforget_corder_blueapp_style"
+                android:fontFamily="@font/poppins_regular"
+                android:onClick="onClick"
+                android:paddingStart="32dp"
+                android:paddingEnd="32dp"
+                android:text="@string/premiumPurchaseButton"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                app:layout_constraintStart_toStartOf="@+id/actPremiumSubscribeButton"
+                app:layout_constraintTop_toBottomOf="@+id/actPremiumSubscribeButton" />
+
+            <Button
+                android:id="@+id/actExpertPurchaseButton"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView5"
+                android:layout_centerHorizontal="false"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:background="@drawable/mforget_corder_blueapp_style"
+                android:fontFamily="@font/poppins_regular"
+                android:onClick="onClick"
+                android:paddingStart="32dp"
+                android:paddingEnd="32dp"
+                android:text="@string/ExpertPurchaseButton"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                app:layout_constraintStart_toStartOf="@+id/textView5"
+                app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+            <Button
+                android:id="@+id/actMonitorPurchaseButton"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/actExpertPurchaseText"
+                android:layout_centerHorizontal="false"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/mforget_corder_blueapp_style"
+                android:fontFamily="@font/poppins_regular"
+                android:onClick="onClick"
+                android:paddingStart="32dp"
+                android:paddingEnd="32dp"
+                android:text="@string/monitorPurchaseButton"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                app:layout_constraintStart_toStartOf="@+id/actExpertPurchaseText"
+                app:layout_constraintTop_toBottomOf="@+id/actExpertPurchaseText" />
+
+            <Button
+                android:id="@+id/actNotificationPurchaseButton"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/actMonitorPurchaseText"
+                android:layout_centerHorizontal="false"
+
+                android:layout_marginTop="@dimen/_15sdp"
+                android:background="@drawable/mforget_corder_blueapp_style"
+                android:fontFamily="@font/poppins_regular"
+                android:onClick="onClick"
+                android:paddingStart="32dp"
+                android:paddingEnd="32dp"
+                android:text="@string/notificationPurchaseButton"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                app:layout_constraintStart_toStartOf="@+id/actMonitorPurchaseText"
+                app:layout_constraintTop_toBottomOf="@+id/actMonitorPurchaseText" />
+
+            <Button
+                android:id="@+id/actProfilePurchaseButton"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/actNotificationPurchaseText"
+                android:layout_centerHorizontal="false"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:background="@drawable/mforget_corder_blueapp_style"
+                android:fontFamily="@font/poppins_regular"
+                android:onClick="onClick"
+                android:paddingStart="32dp"
+                android:paddingEnd="32dp"
+                android:text="@string/ProfilePurchaseButton"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                app:layout_constraintStart_toStartOf="@+id/actNotificationPurchaseText"
+                app:layout_constraintTop_toBottomOf="@+id/actNotificationPurchaseText" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="false"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginEnd="16dp"
+                android:fontFamily="@font/poppins_regular"
+
+                android:gravity="start"
+                android:text="@string/purchaseTitle"
+                android:textColor="#757575"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/actExpertPurchaseText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/actExpertPurchaseButton"
+                android:layout_centerHorizontal="false"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:fontFamily="@font/poppins_regular"
+                android:textColor="#757575"
+                android:gravity="start"
+                android:text="@string/ExpertPurchaseText"
+                app:layout_constraintEnd_toEndOf="@+id/textView1"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/actExpertPurchaseButton"
+                app:layout_constraintTop_toBottomOf="@+id/actExpertPurchaseButton" />
+
+
+            <TextView
+                android:id="@+id/actMonitorPurchaseText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/actMonitorPurchaseButton"
+                android:layout_centerHorizontal="false"
+
+                android:layout_marginTop="@dimen/_10sdp"
+
+                android:text="@string/monitorPurchaseText"
+                android:textColor="#757575"
+                app:layout_constraintEnd_toEndOf="@+id/actExpertPurchaseText"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/actMonitorPurchaseButton"
+                app:layout_constraintTop_toBottomOf="@+id/actMonitorPurchaseButton" />
+
+            <TextView
+                android:id="@+id/actNotificationPurchaseText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/actNotificationPurchaseButton"
+                android:layout_centerHorizontal="false"
+                android:layout_marginTop="@dimen/_10sdp"
+
+
+                android:gravity="start"
+                android:text="@string/notificationPurchaseText"
+                android:textColor="#757575"
+                app:layout_constraintEnd_toEndOf="@+id/actMonitorPurchaseText"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/actNotificationPurchaseButton"
+                app:layout_constraintTop_toBottomOf="@+id/actNotificationPurchaseButton" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/actPremiumPurchaseButton"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="false"
+                android:layout_marginTop="8dp"
+                android:text="@string/premiumPurchaseText"
+                android:textColor="#757575"
+                app:layout_constraintEnd_toEndOf="@+id/actProfilePurchaseText"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/actPremiumPurchaseButton"
+                app:layout_constraintTop_toBottomOf="@+id/actPremiumPurchaseButton" />
+
+            <TextView
+                android:id="@+id/actProfilePurchaseText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/actProfilePurchaseButton"
+                android:layout_centerHorizontal="false"
+
+                android:layout_marginTop="@dimen/_10sdp"
+
+                android:text="@string/ProfilePurchaseText"
+                android:textColor="#757575"
+                app:layout_constraintEnd_toEndOf="@+id/actNotificationPurchaseText"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/actProfilePurchaseButton"
+                app:layout_constraintTop_toBottomOf="@+id/actProfilePurchaseButton" />
+
+            <ImageView
+                android:id="@+id/hack"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:background="@android:drawable/menuitem_background"
+                android:onClick="onClick"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:id="@+id/view3"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@color/Text"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textView1" />
+
+            <View
+                android:id="@+id/view4"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/Text"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/actExpertPurchaseText" />
+
+            <View
+                android:id="@+id/view5"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@color/Text"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/actMonitorPurchaseText" />
+
+            <View
+                android:id="@+id/view6"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@color/Text"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/actNotificationPurchaseText" />
+
+            <View
+                android:id="@+id/view7"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/Text"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textView5" />
+
+            <!--        *** For testing purchases
+                        <Button
+                            android:id="@+id/actExpertPurchaseButton2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Buy Premium"
+                            tools:layout_editor_absoluteX="264dp"
+                            tools:layout_editor_absoluteY="513dp"
+                            android:onClick="onClick"
+                            />
+                        <Button
+                            android:id="@+id/resetPurchase"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Reset"
+                            tools:layout_editor_absoluteX="264dp"
+                            tools:layout_editor_absoluteY="513dp"
+                            android:onClick="onClick"
+                            app:layout_constraintStart_toStartOf="@+id/actExpertPurchaseButton2"
+                            />
+             -->
+
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </ScrollView>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/toolbar_cardiaccoherence"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:background="@color/colorApp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:text="@string/app_name"
+                        android:textColor="@color/color2"
+                        android:textSize="17sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <Button
+                        android:id="@+id/actCancelButton"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:onClick="onClick"
+                        android:text="@string/cancel"
+                        android:textAllCaps="false"
+                        android:textColor="#FFFFFF"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+

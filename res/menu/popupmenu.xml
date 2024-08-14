@@ -1,0 +1,24 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+        <item
+            android:id="@+id/Parameters"
+            android:title="@string/parameters"/>
+        <item
+            android:id="@+id/Profile"
+            android:title="@string/profile" />
+        <item
+            android:id="@+id/History"
+            android:title="@string/history"/>
+        <item
+            android:id="@+id/Help"
+            android:title="@string/helplabel"/>
+        <item
+            android:id="@+id/Tutorial"
+            android:title="@string/tutoriallabel"/>
+        <item
+            android:id="@+id/About"
+            android:title="@string/aboutlabel"/>
+        <item
+            android:id="@+id/Share"
+            android:title="@string/shareapp"/>
+
+</menu>
